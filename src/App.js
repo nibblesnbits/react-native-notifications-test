@@ -24,6 +24,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import NotificationComponent from './NotificationComponent';
 
 const Section = ({ children, title }) => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -89,6 +90,7 @@ const App = () => {
           <LearnMoreLinks />
         </View>
       </ScrollView>
+      <NotificationComponent />
     </SafeAreaView>
   );
 };
